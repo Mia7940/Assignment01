@@ -7,13 +7,16 @@
         background: #00FFFF;
         Font-size
   
-      display:grid;
+      display: grid;
       grid template-columns: 200px 1fr 1fr 150px;
       grid template-rows: 250px 1fr 1fr  300,  ;
       gap: 15px;
       }
+      
       div {
         align-context:center;
+      }
+      
  .header {
     grid-column:1;
    grid-column:5;
@@ -32,11 +35,26 @@
         grid-row:1;
         grid-row:2;
          }
+       
+       .text1 {
+         grid-column:2;
+    klf6pe     grid-column:3;
+        grid-row:1;
+        grid-row:2;
+         }
     </style>
   </head>
   <body>
     
- <div class="header"><center><h1>Guess Who..?</h1></center></div>
+ <div class="header">
+   <center>
+   <h1>Guess Who..?</h1>
+ </center>
+   <br>
+   <p>!!Go Row By Row and Guess Who!!</p>
+ </div>
+    
+  
     
 <div class= "picture1">
   <img src="bronx.jpeg" width= "95%";>
@@ -44,9 +62,16 @@
 
     
     <div class= "picture2">
-  <img src="bronx.jpeg" width= "95%";>
+  <img src="barbie.png" width= "95%";>
 </div>
     
+  <div class= "text1">
+<button onclick="myFuction()">Click Hint</button>
+
+    <p id="demo"></p>
+
+ document.getElementById("demo").innerHTML = "; 
+
     
   </body>
 </html>
