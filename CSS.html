@@ -6,43 +6,50 @@
       body{
         background: #00FFFF; 
         Font-size:20px;
-        {\border-style: solid pink;
+        {border-style: solid pink;
     
   
       display: grid;
       grid-template-columns: 200px 1fr 1fr 100px;
       grid-template-rows: 250px 1fr 1fr  300px;
-      gap: 15px;
+      gap: 10px;
       }
       
       div {
-        align-context:center;
+        align-context: center;
       }
       
  .header {
-    grid-column:1;
-   grid-column:5;
-    grid-row:1;
-   grid-row:2;
+    grid-column-start:1;
+   grid-column-end:5;
+    grid-row-start:1;
+   grid-row-end:2;
  }
+ 
         .picture1 {
-         grid-column:1;
-         grid-column:2;
-        grid-row:1;
-        grid-row:2;
+         grid-column-start:1;
+         grid-column-end:2;
+        grid-row-start:2;
+        grid-row-end:3;
         }
          .picture2 {
-         grid-column:3;
-         grid-column:5;
-        grid-row:1;
-        grid-row:2;
+         grid-column-start:3;
+         grid-column-end:5;
+        grid-row-start:2;
+        grid-row-end:3;
          }
        
        .text1 {
-        grid-column:2;
         grid-column:3;
+        grid-column:4;
         grid-row:1;
         grid-row:2;
+         }
+      .text2 {
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:3;
+        grid-row-end:4;
          }
     </style>
   </head>
@@ -56,25 +63,30 @@
    <center>
     <p>!!Go Row By Row and Guess Who!!</p> 
    </center>
-   
  </div>
     
     
 <div class= "picture1">
-  <img src="bronx.jpeg" width= "95%";>
+  <img src="bronx.jpeg" onclick = "this.style = 'border: 3px black solid;';" width="95%" style="border: 2px white solid;"><
+  <img src="bronx.jpeg" width= "35%";>
 </div>
 
     
     <div class= "picture2">
-  <img src="barbie.png" width= "95%";>
+  <img src="barbie.png" width= "45%";>
 </div>
     
 
 <div class= "text1">
-  <h1>Sacred Heart High School</h1>
+  
+    <h1 onclick = "this.innerHTML = 'Sacred Heart High School'; this.style='color: red;';" ondblclick = "this.innerHTML = 'Click for Hint'; this.style='color: black;';">Click for Hint</h1>
+ 
 </div>
 
     <div class= "text2">
+        <h1 onclick = "this.innerHTML = 'Best New Artist 2023'; this.style='color: red;';" ondblclick = "this.innerHTML = 'Click for Hint'; this.style='color: black;';">Click for Hint</h1>
+ 
+    </div>
       
     
   </body>
