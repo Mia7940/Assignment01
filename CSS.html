@@ -10,9 +10,9 @@
     
   
       display: grid;
-      grid-template-columns: 200px 1fr 1fr 100px;
-      grid-template-rows: 250px 1fr 1fr  300px;
-      gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 500px 1fr 1fr  300px;
+      gap: 15px;
       }
       
       div {
@@ -38,7 +38,13 @@
         grid-row-start:2;
         grid-row-end:3;
          }
-       
+      
+       .picture3 {
+         grid-column-start:2;
+         grid-column-end:3;
+        grid-row-start:4;
+        grid-row-end:5;
+             
        .text1 {
         grid-column:3;
         grid-column:4;
@@ -86,7 +92,9 @@
         <h1 onclick = "this.innerHTML = 'Best New Artist 2023'; this.style='color: red;';" ondblclick = "this.innerHTML = 'Click for Hint'; this.style='color: black;';">Click for Hint</h1>
  
     </div>
-      
+      <div class = picture2>
+               <img src="icon.jpeg" onclick = "this.src = 'niki.jpeg.';" width="35%" style="border: 2px pink solid;">
+
     
   </body>
 </html>
