@@ -24,8 +24,10 @@
    grid-column-end:5;
     grid-row-start:1;
    grid-row-end:2;
+   font-size: 75px;
  }
- 
+
+    
         .picture1 {
          grid-column-start:1;
          grid-column-end:2;
@@ -42,6 +44,12 @@
        .picture3 {
          grid-column-start:2;
          grid-column-end:3;
+        grid-row-start:3;
+        grid-row-end:4;
+
+         .picture4 {
+         grid-column-start:4;
+         grid-column-end:5;
         grid-row-start:4;
         grid-row-end:5;
              
@@ -50,12 +58,15 @@
         grid-column:4;
         grid-row:1;
         grid-row:2;
+         border-style: solid pink; 
          }
       .text2 {
         grid-column-start:1;
         grid-column-end:2;
         grid-row-start:3;
-        grid-row-end:4;
+        grid-row-end:4
+        border-style: solid pink; ;
+
          }
     </style>
   </head>
@@ -73,12 +84,16 @@
     
     
 <div class= "picture1">
-  <img src="icon.jpeg" onclick = "this.src = 'bronx.jpeg';" width="35%" style="border: 2px pink solid;">
+  
+<img src="icon.jpeg" onclick = "this.src = 'bronx.jpeg';" width="35%" style="border: 2px pink solid;">
+
 </div>
 
     
     <div class= "picture2">
-       <img src="icon.jpeg" onclick = "this.src = 'barbie.png.';" width="35%" style="border: 2px pink solid;">
+      <center>       <img src="icon.jpeg" onclick = "this.src = 'barbie.png.';" width="35%" style="border: 2px pink solid;">
+</center>
+      
 </div>
     
 
@@ -89,12 +104,20 @@
 </div>
 
     <div class= "text2">
-        <h1 onclick = "this.innerHTML = 'Best New Artist 2023'; this.style='color: red;';" ondblclick = "this.innerHTML = 'Click for Hint'; this.style='color: black;';">Click for Hint</h1>
+      <center>        <h1 onclick = "this.innerHTML = 'Best New Artist 2023'; this.style='color: red;';" ondblclick = "this.innerHTML = 'Click for Hint'; this.style='color: black;';">Click for Hint</h1>
+</center>
  
     </div>
-      <div class = picture2>
-               <img src="icon.jpeg" onclick = "this.src = 'niki.jpeg.';" width="35%" style="border: 2px pink solid;">
-
+      <div class = "picture3">
+               <img src="icon.jpeg" onclick = "this.src = 'niki.jpeg.';" width="25%" style="border: 2px pink solid;">
+      </div>
+    
+      <div class = "picture4">
+        <center>
+               <img src="icon.jpeg" onclick = "this.src = 'ice.jpeg.';" width="25%" style="border: 2px pink solid;">
+       </center>
+        
+      </div>
     
   </body>
 </html>
